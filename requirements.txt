@@ -1,38 +1,69 @@
+# Environment and configuration
 python-dotenv
+
+# Jupyter and interactive development
 jupyterlab
 ipywidgets
+jupyter-dash
+
+# Core data science libraries
 requests
-numpy
+numpy>=1.18.5,<2.0
 pandas
 scipy
 scikit-learn
 matplotlib
+
+# Machine learning and NLP
 gensim
 torch
 transformers
+sentence-transformers
 tqdm
+
+# LLM and AI services
 openai
+google-genai
+anthropic
+ollama
+
+# Gradio and web interfaces (with compatible pillow version)
 gradio
+# Note: gradio requires pillow<11.0, this will be handled automatically
+
+# LangChain ecosystem
 langchain
 langchain-core
 langchain-text-splitters
 langchain-openai
 langchain-chroma
 langchain-community
-datasets==3.6.0
-matplotlib
-google-generativeai
-anthropic
+
+# Vector databases and data processing
 chromadb
+datasets>=3.6.0
+
+# Data visualization
 plotly
-jupyter-dash
+
+# Web scraping and parsing
 beautifulsoup4
+feedparser
+
+# Audio processing
 pydub
+
+# Cloud and deployment
 modal
-ollama
+
+# System utilities
 psutil
 setuptools
 speedtest-cli
-sentence_transformers
-feedparser
-protobuf==3.20.2
+
+# Protocol buffers (updated for compatibility)
+protobuf>=5.0,<7.0
+
+# Additional compatibility specifications
+fsspec>=2023.1.0,<=2025.3.0
+pillow>=8.0,<11.0
